@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     && find . -type f -name 'LICENSE' -delete \
     && find . -type f -name 'THIRDPARTYLICENSEREADME.txt' -delete \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
     && mkdir /var/java-code
 
 VOLUME /var/java-code
